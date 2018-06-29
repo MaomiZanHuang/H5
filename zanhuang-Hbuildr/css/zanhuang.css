@@ -1,0 +1,69 @@
+
+.zanhuang-img {
+	width: 100%;
+}
+/*去掉顶边和底部边框*/
+.mui-table-view:after {
+	height: 0px;
+}
+.mui-table-view:before {
+	height: 0px;
+} 
+/*猜你喜欢*/
+.like {
+	margin-top: 0.3rem;
+	display: inline-block;
+	width: 100%;
+	height: 2.5rem;
+	color: red;
+	background-color: #FFFFFF;
+	line-height: 2.5rem;
+	text-align: center;
+}
+/*导航栏背景颜色*/
+
+
+/*.mui-bar-tab{background: #515151;}*/
+
+
+/*导航项目颜色*/
+
+
+/*.mui-bar-tab .mui-tab-item{color: #0000C0;}*/
+
+
+/*导航项目激活颜色*/
+
+.mui-bar-tab .mui-tab-item.mui-active {
+	color: #f9304c;
+}
+
+
+/*修改导航项目图片颜色*/
+
+
+/*.mui-icon-extra-hotel:before { content: "\e301"; color:#2187E7; }*/
+
+
+/*.icon {
+	width: 1em;
+	height: 1em;
+	vertical-align: -0.15em;
+	fill: currentColor;
+	overflow: hidden;
+}*/
+
+body {
+	background-color: #EFEFF4;
+}
+
+
+/*将返回按钮和导航条标题设置为白色*/
+
+.mui-icon-back:before,
+.mui-icon-left-nav:before,
+.mui-pull-right:before,
+.mui-bar-nav .mui-title,
+#rightBar:before {
+	color: white;
+}

@@ -1,0 +1,157 @@
+<!doctype html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link href="../css/mui.min.css" rel="stylesheet" />
+		<link href="../css/plugins/own.css" rel="stylesheet" />
+		<link href="../css/zanhuang.css" rel="stylesheet" />
+		<link href="http://at.alicdn.com/t/font_671264_s8ia32h16ji6n7b9.css" rel="stylesheet" />
+		<script src="../js/mui.min.js"></script>
+
+		<style>
+
+		</style>
+	</head>
+
+	<body>
+		<header id="header" class="mui-bar mui-bar-transparent" style="background-color: rgba(249, 48, 76, 0);">
+			<a class="mui-action-back mui-icon mui-icon-contact mui-pull-left" ></a>
+			<h1 class="mui-title">千寻赞皇</h1>
+		</header>
+
+		<!--底部导航栏-->
+		<nav class="mui-bar mui-bar-tab">
+			<a class="mui-tab-item mui-active">
+				<span class="mui-icon mui-icon-home"></span>
+				<span class="mui-tab-label">首页</span>
+			</a>
+			<a class="mui-tab-item">
+				<span class="mui-icon mui-icon-phone"></span>
+				<span class="mui-tab-label">分类</span>
+			</a>
+			<a class="mui-tab-item">
+				<span class="mui-icon mui-icon-email"></span>
+				<span class="mui-tab-label">排行</span>
+			</a>
+			<a class="mui-tab-item">
+				<span class="mui-icon mui-icon-gear"></span>
+				<span class="mui-tab-label">公告</span>
+			</a>
+			<a class="mui-tab-item">
+				<span class="mui-icon mui-icon-gear"></span>
+				<span class="mui-tab-label">我的</span>
+			</a>
+		</nav>
+		<!--底部导航栏结束-->
+
+		<div class="mui-content">
+			<!--轮播图-->
+			<div id="slider" class="mui-slider">
+				<div class="mui-slider-group mui-slider-loop">
+					<!-- 额外增加的一个节点(循环轮播：第一个节点是最后一张轮播) -->
+					<div class="mui-slider-item mui-slider-item-duplicate">
+						<a href="#" index="-1">
+							<img id="slider_img" src="../images/banner.png">
+						</a>
+					</div>
+					<!-- 第一张 -->
+					<div class="mui-slider-item">
+						<a href="#" index="0">
+							<img src="../images/m_DisplayImage2.jpg">
+						</a>
+					</div>
+					<!-- 第二张 -->
+					<div class="mui-slider-item">
+						<a href="#" index="1">
+							<img src="../images/m_DisplayImage1.jpg">
+						</a>
+					</div>
+					<!-- 第三张 -->
+					<div class="mui-slider-item">
+						<a href="#" index="2">
+							<img src="../images/banner.png">
+						</a>
+					</div>
+					<!-- 第四张 -->
+					<div class="mui-slider-item">
+						<a href="#" index="3">
+							<img src="../images/banner.png">
+						</a>
+					</div>
+					<!-- 额外增加的一个节点(循环轮播：最后一个节点是第一张轮播) -->
+					<div class="mui-slider-item mui-slider-item-duplicate">
+						<a href="#" index="-1">
+							<img src="../images/m_DisplayImage2.jpg">
+						</a>
+					</div>
+				</div>
+				<div class="mui-slider-indicator">
+					<div class="mui-indicator mui-active"></div>
+					<div class="mui-indicator"></div>
+					<div class="mui-indicator"></div>
+					<div class="mui-indicator"></div>
+				</div>
+			</div>
+			<!--轮播图-->
+
+			<!--顶部图形导航-->
+			<div class="mui-slider-item" style="margin-top: 8px;">
+				<ul class="mui-table-view mui-grid-view" id="topupimg1">
+					<!--<a href=""><img width="100%" src="https://m.360buyimg.com/mobilecms/s828x252_jfs/t22201/103/103385437/151483/5892927d/5afc00deNb5b0558f.jpg!q70.jpg.dpg"></a>-->
+				</ul>
+			</div>
+			<!--顶部图形导航结束-->
+			<div style="background:#ffffff; margin-top: 8px;"><img class="mui-media-object" src="../images/xsqg.jpg" style=" margin-left:4%;"></div>
+			<!--活动导航-->
+			<div id="qianggou" style="margin-top: 0px;">
+				<ul class="mui-table-view mui-grid-view" id="activity1">
+					<div style="position: absolute; left:50% ; background:#EEEEEE; top:0%;  height:100%;  width:1px; "></div>
+					<div style="position: absolute; ; background:#EEEEEE; top:50%;  height:1%;  width:100%; "></div>
+					
+				</ul>
+			</div>
+			<!--活动导航-->
+
+			<!--猜你喜欢-->
+			<span class="like">
+                <span class="mui-icon iconfont  icon-hengxiandianzuo"></span>
+			<span class="mui-icon iconfont  icon-cainixihuan"></span>
+			<span class="mui-tab-label">日销量最佳</span>
+			<span class="mui-icon iconfont  icon-hengxiandianyou"></span>
+			</span>
+			<!--猜你喜欢-->
+
+			<!--商品列表-->
+			<div id="goodsListShow1" class="mui-table-view mui-grid-view own-gray-color" style="margin-top: 0.3rem;"></div>
+			<!--商品列表-->
+			
+			<!--底部结束图片-->
+			<div style="text-align:center">
+				<img src="../images/base_img.png" />
+			</div>
+			<!--底部结束图片-->
+
+		
+		
+		</div>
+
+	</body>
+	<!--全局配置-->
+	<script type="text/javascript" src="../js/zanhuang/whole.js"></script>
+	<!--顶部图形导航-->
+	<script type="text/javascript" src="../js/libs/topupimg.js"></script>
+	<!--推荐商品列表-->
+	<script type="text/javascript" src="../js/libs/goodsListShow.js"></script>
+	<!--蓝鸟轮播图-->
+	<script type="text/javascript" src="../js/plugins/bluebird_sliderList.js"></script>
+	<!--活动内容-->
+	<script type="text/javascript" src="../js/libs/activity.js"></script>
+	<!--传参-->
+	<script src="../js/plugins/mui.openWindow.js"></script>
+	<!--首页-->
+	<script type="text/javascript" src="../js/zanhuang/home.js"></script>
+
+</html>

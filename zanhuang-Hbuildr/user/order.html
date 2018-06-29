@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title></title>
+		<script src="../js/mui.min.js"></script>
+		<link href="../css/mui.min.css" rel="stylesheet" />
+		<style type="text/css">
+			.kaoyou {
+				padding-right: 20px;
+			}
+			
+			.mui-switch:before {
+				font-size: 13px;
+				position: absolute;
+				top: 3px;
+				right: 11px;
+				content: '否';
+				text-transform: uppercase;
+				color: #999
+			}
+			
+			.mui-switch.mui-active:before {
+				right: auto;
+				left: 15px;
+				content: '是';
+				color: #fff
+			}
+			
+			#chicuncun button {
+				color: darkgrey;
+				font-size: 12px;
+				width: 48%;
+				margin-left: 5px;
+			}
+			
+			#chicuncun {
+				margin-left: 0;
+				padding-left: 0;
+			}
+			
+			.dianji {
+				color: darkred;
+				border-color: darkred;
+			}
+		</style>
+	</head>
+
+	<body>
+		<header class="mui-bar mui-bar-nav">
+			<a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left" style="color: #f44d42;"></a>
+			<h1 class="mui-title" style=" font-family: '微软雅黑'; font-weight: bold;">填写订单</h1>
+		</header>
+		<div class="mui-content">
+			<div class="mui-input-group">
+				<div class="mui-input-row">
+					<label style=" font-family: '微软雅黑'; font-size: 14px;">QQ号</label>
+					<input type="text" oninput="qq(event)" placeholder="请填写您的QQ号" style=" font-family: '微软雅黑'; font-size: 12px;" id="qq">
+				</div>
+			</div>
+
+			<ul class="mui-table-view">
+				<li class="mui-table-view-cell">
+					QQ头像：
+					<img id="headportrait" class="mui-pull-right kaoyou" src="http://q1.qlogo.cn/g?b=qq&nk=851656783&s=100&t=1449411350" style="width: 50%; height: 50%;" />
+				</li>
+				<li class="mui-table-view-cell" style="font-family: '微软雅黑'; font-size: 14px;">
+					付款方式： <span class=" kaoyou">
+	                    	
+	                        <br />
+	                    
+	                    </span>
+					<ul id="chicuncun" style="padding: 2px ">
+						<button type="button" class="mui-btn mui-btn-grey mui-btn-outlined mui-btn-block chicun dianji" style="float: left;" tag="1">现金购买</button>
+						<button type="button" class="mui-btn mui-btn-grey mui-btn-outlined mui-btn-block chicun" style="float: left;" tag="2">积分购买</button>
+
+					</ul>
+				</li>
+				<li class="mui-table-view-cell" style="font-family: '微软雅黑'; font-size: 14px;">
+
+					备注 <span class=" kaoyou">
+	                    	
+	                        <br />
+	                        <input type="text" id="beizhu" style="font-family: '微软雅黑'; font-size: 12px;" placeholder="特别要求请留言,客服会视情况处理">
+	                    
+	                    </span>
+
+				</li>
+				<li class="mui-table-view-cell">
+
+					<img id="itemImg" src="../images/dan1.png" width="20%" style="float: left;">
+					<span style="width:80%;text-align: left;padding-left: 22px;float: right;" style="font-family: '微软雅黑'; font-size: 14px;">
+			         	<p id="itemName" style="font-family: '微软雅黑'; font-size: 16px; color:black;">QQ名片赞 </p>
+						<p style="font-family: '微软雅黑'; font-size: 14px;"><font id="itemPrice" color="red">¥ 178</font></p>
+						<p id="itemNum" style="font-family: '微软雅黑'; font-size: 14px;">数量:1</p>
+						<p id="itemSpecName" style="font-family: '微软雅黑'; font-size: 14px;">规格:1.0磅(约13x13cm)</p>
+					</span>
+
+				</li>
+				<li class="mui-table-view-cell" style="font-family: '微软雅黑'; font-size: 14px;">
+
+					商品金额 <span id="totalMoney" class="mui-pull-right" style="color: red;">¥ 100.00</span>
+
+				</li>
+				<li class="mui-table-view-cell" style="font-family: '微软雅黑'; font-size: 14px;">
+
+					其他 <span class="mui-pull-right " style="color: red;">¥ 0.00</span>
+
+				</li>
+				<li class="mui-table-view-cell" style="font-family: '微软雅黑'; font-size: 14px;">
+
+					优惠 <span class="mui-pull-right" style="color: greenyellow;">-¥ 0.00</span>
+
+				</li>
+
+			</ul>
+		</div>
+		<br />
+		<br />
+		<br />
+		<nav class="mui-bar mui-bar-tab" style="font-family: '微软雅黑'; font-size: 14px;">
+			<a class="mui-tab-item mui-active" style="color: #000000;">
+
+				<span class="mui-tab-label">应付总额:</span>
+			</a>
+			<a class="mui-tab-item">
+
+				<span id="should" class="mui-tab-label">¥100.00</span>
+			</a>
+
+			<a class="mui-tab-item" style="background-color: red;color: #fff;font-weight: bold;" id="tijiaodingdan">
+
+				<span id="submitOrder" class="mui-tab-label">提交订单</span>
+			</a>
+		</nav>
+	</body>
+	<script type="text/javascript" src="../js/plugins/jquery.min.js" ></script>
+	<script type="text/javascript" src="../js/plugins/angular.min.js" ></script>
+	<!--全局配置-->
+	<script type="text/javascript" src="../js/zanhuang/whole.js"></script>
+	<!--传参-->
+	<script type="text/javascript" src="../js/plugins/mui.openWindow.js"></script>
+	<script type="text/javascript" src="../js/zanhuang/order.js"></script>
+</html>
